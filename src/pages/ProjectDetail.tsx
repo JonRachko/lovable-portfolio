@@ -34,15 +34,6 @@ const ProjectDetail = () => {
         <div className="space-y-8">
           {/* Header */}
           <div>
-            {project.logo && (
-              <div className="mb-6 flex justify-center">
-                <img 
-                  src={project.logo} 
-                  alt={`${project.title} logo`}
-                  className="h-16 md:h-20 object-contain"
-                />
-              </div>
-            )}
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
               {project.title}
             </h1>
