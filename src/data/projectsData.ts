@@ -48,7 +48,6 @@ export const projectsData: ProjectData[] = [
         "8 interactive lessons across multiple subjects (Science, Math, Language Arts, and more)",
         "5 unique educational mini-games with increasing difficulty levels",
         "Multi-language support: English, Arabic, and Hebrew with full RTL support",
-        "Profile customization system with avatars and user preferences",
         "Dynamic adventure progression with conditional content based on lesson completion",
         "Comprehensive UI systems for lessons, mini-games, and navigation",
         "Cloud save functionality for progress tracking across devices",
@@ -89,7 +88,7 @@ export const projectsData: ProjectData[] = [
         },
         {
           src: "/projects/nick-academy/profile-panel.mp4",
-          caption: "Profile Customization System",
+          caption: "Profile Preview System",
         },
         {
           src: "/projects/nick-academy/screen-swap.mp4",
