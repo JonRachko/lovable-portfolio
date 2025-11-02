@@ -2,9 +2,24 @@ import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
+import { projectsData } from "@/data/projectsData";
 
 const ProjectDetail = () => {
   const { id } = useParams();
+  const project = projectsData.find((p) => p.id === Number(id));
+
+  if (!project) {
+    return (
+      <div className="min-h-screen py-20 flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-4">Project Not Found</h1>
+          <Button asChild>
+            <Link to="/projects">Back to Projects</Link>
+          </Button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen py-20">
@@ -20,92 +35,143 @@ const ProjectDetail = () => {
           {/* Header */}
           <div>
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-              Project Title {id}
+              {project.title}
             </h1>
             <div className="flex flex-wrap gap-2 mb-6">
-              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
-                Unity
-              </span>
-              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
-                C#
-              </span>
-              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
-                Technical Art
-              </span>
+              {project.tags.map((tag) => (
+                <span key={tag} className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
+                  {tag}
+                </span>
+              ))}
             </div>
-            <div className="flex gap-4">
-              <Button asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="mr-2" size={16} />
-                  View Live
-                </a>
-              </Button>
-              <Button asChild variant="outline">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2" size={16} />
-                  Source Code
-                </a>
-              </Button>
+            <div className="flex flex-wrap gap-4">
+              {project.links.playStore && (
+                <Button asChild>
+                  <a href={project.links.playStore} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2" size={16} />
+                    View on Play Store
+                  </a>
+                </Button>
+              )}
+              {project.links.appStore && (
+                <Button asChild>
+                  <a href={project.links.appStore} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2" size={16} />
+                    View on App Store
+                  </a>
+                </Button>
+              )}
+              {project.links.live && (
+                <Button asChild>
+                  <a href={project.links.live} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2" size={16} />
+                    View Live
+                  </a>
+                </Button>
+              )}
+              {project.links.youtube && (
+                <Button asChild variant="outline">
+                  <a href={project.links.youtube} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2" size={16} />
+                    Watch Demo
+                  </a>
+                </Button>
+              )}
+              {project.links.github && (
+                <Button asChild variant="outline">
+                  <a href={project.links.github} target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2" size={16} />
+                    Source Code
+                  </a>
+                </Button>
+              )}
             </div>
           </div>
 
-          {/* Featured Image/Video Placeholder */}
-          <Card>
-            <CardContent className="p-0">
-              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center rounded-t-lg">
-                <span className="text-8xl">🎮</span>
-              </div>
-            </CardContent>
-          </Card>
+          {/* Featured Video */}
+          {project.media.mainVideo && (
+            <Card>
+              <CardContent className="p-0">
+                <video 
+                  className="w-full aspect-video rounded-lg" 
+                  controls 
+                  preload="metadata"
+                >
+                  <source src={project.media.mainVideo} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </CardContent>
+            </Card>
+          )}
 
           {/* Project Description */}
           <Card>
             <CardContent className="p-8 space-y-6">
               <div>
                 <h2 className="text-2xl font-heading font-bold mb-4">Overview</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  [Detailed project description goes here. Explain what the project is about, 
-                  your role in it, and what problems you solved.]
-                </p>
+                <div className="space-y-4">
+                  {project.content.overview.map((paragraph, index) => (
+                    <p key={index} className="text-muted-foreground leading-relaxed">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
               </div>
 
               <div>
                 <h2 className="text-2xl font-heading font-bold mb-4">Key Features</h2>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>Feature or achievement 1</li>
-                  <li>Feature or achievement 2</li>
-                  <li>Feature or achievement 3</li>
-                  <li>Feature or achievement 4</li>
+                  {project.content.keyFeatures.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
                 </ul>
               </div>
 
               <div>
                 <h2 className="text-2xl font-heading font-bold mb-4">Technical Highlights</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  [Describe the technical aspects, tools used, challenges faced, and how you overcame them. 
-                  This is where you can showcase your technical expertise.]
-                </p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  {project.content.technicalHighlights.map((highlight, index) => (
+                    <li key={index}>{highlight}</li>
+                  ))}
+                </ul>
               </div>
 
               <div>
                 <h2 className="text-2xl font-heading font-bold mb-4">My Role</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  [Explain your specific contributions to this project. What did you program? 
-                  What systems did you design? How did you work with the team?]
-                </p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  {project.content.myRole.map((role, index) => (
+                    <li key={index}>{role}</li>
+                  ))}
+                </ul>
               </div>
             </CardContent>
           </Card>
 
-          {/* Additional Media Placeholders */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
-              <span className="text-4xl">📸</span>
+          {/* Showcase Videos */}
+          {project.media.showcaseVideos && project.media.showcaseVideos.length > 0 && (
+            <div>
+              <h2 className="text-2xl font-heading font-bold mb-6">Feature Showcase</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {project.media.showcaseVideos.map((video, index) => (
+                  <Card key={index} className="overflow-hidden">
+                    <CardContent className="p-0">
+                      <video 
+                        className="w-full aspect-video" 
+                        controls 
+                        preload="metadata"
+                      >
+                        <source src={video.src} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                      <div className="p-4">
+                        <p className="text-sm text-muted-foreground">{video.caption}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
-            <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
-              <span className="text-4xl">📸</span>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
