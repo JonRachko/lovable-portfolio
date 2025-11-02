@@ -22,7 +22,12 @@ const Projects = () => {
             <Card key={project.id} className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center overflow-hidden">
                 {project.image && project.image !== "placeholder" ? (
-                  <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                  <img
+                    src={`${project.image}${project.image.includes('?') ? '&' : '?'}v=20251102`}
+                    alt={project.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
                 ) : (
                   <span className="text-6xl">🎮</span>
                 )}
