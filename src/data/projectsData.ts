@@ -4,6 +4,7 @@ export interface ProjectData {
   description: string;
   tags: string[];
   image: string;
+  logo?: string;
   links: {
     playStore?: string;
     appStore?: string;
@@ -108,6 +109,7 @@ export const projectsData: ProjectData[] = [
       "A children's smartwatch with interactive games and activities featuring Nickelodeon characters like SpongeBob and TMNT, combining accelerometer-based entertainment with safety features.",
     tags: ["Unity", "C#", "Wearables", "Game Development", "QA", "Localization", "Performance"],
     image: "/projects/nickwatch/banner.png",
+    logo: "/projects/nickwatch/logo.png",
     links: {
       youtube: "https://www.youtube.com/watch?v=X5ki4-8Y4IE",
       live: "https://www.nickwatch.com/",
