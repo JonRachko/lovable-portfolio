@@ -3,13 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Palette } from "lucide-react";
 
-type ColorScheme = "blue" | "purple" | "coral" | "mint";
+type ColorScheme = "blue" | "purple" | "purple-dark" | "purple-gradient" | "purple-sunset" | "coral" | "mint";
 
 const schemes = [
-  { id: "blue" as ColorScheme, name: "Blue/Teal", color: "#0BA5EC", description: "Professional & Tech-friendly" },
-  { id: "purple" as ColorScheme, name: "Purple/Violet", color: "#8B5CF6", description: "Creative & Artistic" },
-  { id: "coral" as ColorScheme, name: "Coral/Orange", color: "#F97316", description: "Energetic & Approachable" },
-  { id: "mint" as ColorScheme, name: "Mint/Green", color: "#10B981", description: "Modern & Clean" },
+  { id: "blue" as ColorScheme, name: "Ocean Blue", color: "#0BA5EC", description: "Professional & Tech-friendly" },
+  { id: "purple" as ColorScheme, name: "Lavender Light", color: "#F5F0FF", description: "Soft & Dreamy" },
+  { id: "purple-dark" as ColorScheme, name: "Purple Dark", color: "#1A0B2E", description: "Deep & Mysterious" },
+  { id: "purple-gradient" as ColorScheme, name: "Purple Gradient", color: "#3D0066", description: "Vibrant & Dynamic" },
+  { id: "purple-sunset" as ColorScheme, name: "Purple Sunset", color: "#4D0033", description: "Warm & Playful" },
+  { id: "coral" as ColorScheme, name: "Coral Orange", color: "#F97316", description: "Energetic & Approachable" },
+  { id: "mint" as ColorScheme, name: "Mint Green", color: "#10B981", description: "Modern & Clean" },
 ];
 
 const ColorSchemeSwitcher = () => {

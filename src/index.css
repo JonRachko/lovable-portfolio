@@ -64,13 +64,90 @@ All colors MUST be HSL.
 
   /* Color Scheme 2: Purple/Violet - Creative & Artistic */
   [data-theme="purple"] {
+    --background: 250 100% 97%;
+    --foreground: 262 83% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 262 83% 18%;
     --primary: 262 83% 68%;
     --primary-foreground: 0 0% 100%;
+    --secondary: 262 70% 92%;
+    --secondary-foreground: 262 83% 18%;
+    --muted: 262 70% 92%;
+    --muted-foreground: 262 40% 45%;
     --accent: 262 83% 68%;
     --accent-foreground: 0 0% 100%;
+    --border: 262 50% 88%;
+    --input: 262 50% 88%;
     --ring: 262 83% 68%;
     --gradient-primary: linear-gradient(135deg, hsl(262 83% 68%), hsl(262 83% 78%));
-    --shadow-elegant: 0 10px 30px -10px hsl(262 83% 68% / 0.15);
+    --gradient-subtle: linear-gradient(180deg, hsl(250 100% 97%), hsl(262 70% 95%));
+    --shadow-elegant: 0 10px 30px -10px hsl(262 83% 68% / 0.2);
+  }
+
+  /* Purple Dark - Deep & Mysterious */
+  [data-theme="purple-dark"] {
+    --background: 262 70% 8%;
+    --foreground: 262 30% 95%;
+    --card: 262 60% 12%;
+    --card-foreground: 262 30% 95%;
+    --primary: 262 83% 68%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 262 50% 20%;
+    --secondary-foreground: 262 30% 95%;
+    --muted: 262 50% 20%;
+    --muted-foreground: 262 30% 70%;
+    --accent: 262 83% 68%;
+    --accent-foreground: 0 0% 100%;
+    --border: 262 40% 25%;
+    --input: 262 40% 25%;
+    --ring: 262 83% 68%;
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 68%), hsl(262 83% 78%));
+    --gradient-subtle: linear-gradient(180deg, hsl(262 70% 8%), hsl(262 60% 12%));
+    --shadow-elegant: 0 10px 30px -10px hsl(262 83% 68% / 0.3);
+  }
+
+  /* Purple Gradient - Vibrant & Dynamic */
+  [data-theme="purple-gradient"] {
+    --background: 280 100% 12%;
+    --foreground: 280 30% 95%;
+    --card: 280 80% 15%;
+    --card-foreground: 280 30% 95%;
+    --primary: 262 83% 68%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 280 60% 22%;
+    --secondary-foreground: 280 30% 95%;
+    --muted: 280 60% 22%;
+    --muted-foreground: 280 30% 70%;
+    --accent: 262 83% 68%;
+    --accent-foreground: 0 0% 100%;
+    --border: 280 50% 25%;
+    --input: 280 50% 25%;
+    --ring: 262 83% 68%;
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 68%), hsl(320 83% 68%));
+    --gradient-subtle: linear-gradient(135deg, hsl(280 100% 12%), hsl(262 100% 18%));
+    --shadow-elegant: 0 10px 30px -10px hsl(262 83% 68% / 0.4);
+  }
+
+  /* Purple Sunset - Warm & Playful */
+  [data-theme="purple-sunset"] {
+    --background: 330 100% 12%;
+    --foreground: 330 20% 95%;
+    --card: 330 70% 15%;
+    --card-foreground: 330 20% 95%;
+    --primary: 262 83% 68%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 330 50% 22%;
+    --secondary-foreground: 330 20% 95%;
+    --muted: 330 50% 22%;
+    --muted-foreground: 330 20% 70%;
+    --accent: 320 85% 65%;
+    --accent-foreground: 0 0% 100%;
+    --border: 330 40% 25%;
+    --input: 330 40% 25%;
+    --ring: 320 85% 65%;
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 68%), hsl(320 85% 65%));
+    --gradient-subtle: linear-gradient(135deg, hsl(330 100% 12%), hsl(280 90% 15%));
+    --shadow-elegant: 0 10px 30px -10px hsl(320 85% 65% / 0.4);
   }
 
   /* Color Scheme 3: Coral/Orange - Energetic & Approachable */
