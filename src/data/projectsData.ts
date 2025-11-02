@@ -101,4 +101,75 @@ export const projectsData: ProjectData[] = [
       ],
     },
   },
+  {
+    id: 2,
+    title: "NickWatch",
+    description:
+      "A children's smartwatch with interactive games and activities featuring Nickelodeon characters like SpongeBob and TMNT, combining accelerometer-based entertainment with safety features.",
+    tags: ["Unity", "C#", "Wearables", "Game Development", "QA", "Localization", "Performance"],
+    image: "/projects/nickwatch/banner.png",
+    links: {
+      youtube: "https://www.youtube.com/watch?v=X5ki4-8Y4IE",
+      live: "https://www.nickwatch.com/",
+    },
+    content: {
+      overview: [
+        "NickWatch is a children's smartwatch developed by Rimon Studio for Nickelodeon, featuring games and activities with popular characters like SpongeBob SquarePants and the Teenage Mutant Ninja Turtles. It combines accelerometer-based entertainment with safety features, allowing for two-way voice communication and approved contact management.",
+        "As the initial QA technician for NickWatch, I conducted comprehensive manual and automated tests, setting the foundation for the QA process and later training new technicians. I then transitioned to a developer role where I created two games from scratch and optimized existing ones, enhancing performance by 20-30% throughout the Play app.",
+        "My technical contributions spanned multiple critical systems: dynamic localization across eleven languages (including RTL support for Arabic and Hebrew), a sophisticated haptics feedback system used in every game, an internal analytics system that enabled data-driven improvements, and various innovative features like the Sprite Randomizer and Fidgets mini-app.",
+      ],
+      keyFeatures: [
+        "Developed two complete games: Piñata (accelerometer-based) and Tunnel Runner (complete overhaul)",
+        "Performance optimization achieving 20-30% CPU usage reduction across most games",
+        "Dynamic localization system supporting 11 languages with full RTL support",
+        "Sophisticated haptic feedback system with amplitude simulation through on-off patterns",
+        "Internal analytics system tracking gameplay data and player progression",
+        "Quest system to boost engagement and encourage game exploration",
+        "Sprite/Color randomization system for dynamic 2D art variety",
+        "Fidgets mini-app with multiple stress-relief microgames",
+        "Story/Daily Fun Fact narration system with dynamic content management",
+        "Avatar Creator with modular 2D layering and cloud-based asset integration",
+      ],
+      technicalHighlights: [
+        "Engineered accelerometer-based swing detection for Piñata game with nuanced force response",
+        "Implemented frame-perfect collision detection using tweens for Tunnel Runner's obstacle system",
+        "Created TextByLanguage editor tool for real-time language-specific text property adjustments",
+        "Developed TMP serializer to convert TextMeshPro components to RTL-compatible versions",
+        "Innovated haptic amplitude simulation using on-off vibration patterns to overcome hardware limitations",
+        "Built analytics system with minimal coupling, supporting generalized scoring across different game types",
+        "Designed modular avatar system with automated layer sorting and dynamic asset fetching",
+        "Optimized games using Unity Profiler and on-device testing, improving battery life and reducing heat",
+        "Created content management system for stories/facts with designer-friendly configuration files",
+        "Implemented circular smartwatch UI layouts optimized for tiny form factors",
+      ],
+      myRole: [
+        "Started as the initial QA technician, establishing comprehensive testing processes and training new team members",
+        "Transitioned to developer role, creating Piñata and completely overhauling Tunnel Runner game",
+        "Led performance optimization efforts across all games, achieving 20-30% CPU usage improvements",
+        "Spearheaded dynamic localization implementation for 11 languages with custom Unity editor tools",
+        "Pioneered the haptic feedback system used throughout the entire application",
+        "Developed internal analytics system that laid groundwork for the Quest system",
+        "Created Sprite Randomizer for dynamic visual variety in the Fidgets mini-app",
+        "Built Story/Fun Fact and Avatar Creator systems with designer-friendly workflows",
+        "Managed and mentored a junior developer while maintaining hands-on development work",
+        "Collaborated extensively with art, design, and sound teams to refine animations and effects",
+      ],
+    },
+    media: {
+      showcaseVideos: [
+        {
+          src: "/projects/nickwatch/ninja-school.mp4",
+          caption: "Ninja School Gameplay",
+        },
+        {
+          src: "/projects/nickwatch/shake.mp4",
+          caption: "Shake Game Interaction",
+        },
+        {
+          src: "/projects/nickwatch/text-properties.mp4",
+          caption: "Dynamic Localization System - TextByLanguage Editor",
+        },
+      ],
+    },
+  },
 ];
