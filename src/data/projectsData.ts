@@ -33,6 +33,7 @@ export interface ProjectData {
     showcaseImages?: {
       src: string;
       caption: string;
+      link?: string;
     }[];
   };
 }
@@ -314,9 +315,7 @@ export const projectsData: ProjectData[] = [
       "A collection of three mobile games developed during my first role out of college: Cure Commando (resource management), DotBot (3D puzzle platformer), and Makeover Plus (photo styling app).",
     tags: ["Unity", "C#", "Mobile", "Game Development", "Level Design", "UI/UX"],
     image: "/projects/utah-tech-labs/cure-commando.png",
-    links: {
-      playStore: "https://play.google.com/store/apps/details?id=com.UtahTechLabs.CureCommando&hl=en&gl=US",
-    },
+    links: {},
     content: {
       overview: [
         "Utah Tech Labs was my first professional role straight out of college. Our small team in Lithuania was tasked with developing mobile games, and in just ~4 months, we successfully released two games with a third in development.",
@@ -358,14 +357,17 @@ export const projectsData: ProjectData[] = [
         {
           src: "/projects/utah-tech-labs/cure-commando.png",
           caption: "Cure Commando - Resource Management Game",
+          link: "https://play.google.com/store/apps/details?id=com.UtahTechLabs.CureCommando&pcampaignid=web_share",
         },
         {
           src: "/projects/utah-tech-labs/dotbot.png",
           caption: "DotBot - 3D Puzzle Platformer",
+          link: "https://play.google.com/store/apps/details?id=com.UtahTechLabs.DotBot&pcampaignid=web_share",
         },
         {
           src: "/projects/utah-tech-labs/makeover-plus.png",
           caption: "Makeover Plus - Photo Styling App",
+          link: "https://play.google.com/store/apps/details?id=com.UtahTechLabs.MakeoverPlus&pcampaignid=web_share",
         },
       ],
     },
