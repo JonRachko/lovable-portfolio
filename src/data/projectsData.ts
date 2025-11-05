@@ -51,7 +51,7 @@ export const projectsData: ProjectData[] = [
     id: 1,
     title: "Rimon Studio — Nick Academy",
     description:
-      "An educational adventure game for children featuring interactive lessons, mini-games, and engaging storytelling across multiple subjects.",
+      "An educational game platform for children featuring interactive lessons, mini-games, and engaging storytelling across multiple subjects.",
     tags: ["Unity", "C#", "Mobile", "Educational", "UI/UX", "Localization"],
     image: "/projects/nick-academy/banner.png",
     awards: [
@@ -67,35 +67,37 @@ export const projectsData: ProjectData[] = [
     },
     content: {
       overview: [
-        "Nick Academy is an educational adventure game developed by the Kaplan Foundation for Equity in Education (KFEE). Winner of the GESA People's Choice Award, this project demonstrates excellence in educational game design and user engagement.",
-        "As a Junior Unity Programmer, I contributed to creating an engaging learning experience for children through interactive lessons, mini-games, and storytelling. The app features 8 comprehensive lessons across multiple subjects, 5 unique mini-games, and a dialogue system that brings characters to life. Available in English, Arabic, and Hebrew with full RTL support.",
-        "The game combines education with entertainment, allowing children to explore a vibrant academy while learning through play. Each lesson is carefully designed to be both educational and engaging, with progress tracking and profile customization.",
+        "Nick Academy is an game platform developed in Rimon Studio by the sister company KFEE. Winner of the GESA People's Choice Award, this project demonstrates excellence in educational game design and user engagement.",
+        "As a Junior Unity Programmer, I contributed to creating an engaging learning experience for children through minigames, animations and the Adventures feature. The app features comprehensive lessons across multiple subjects, unique mini-games, avatar customization and much more. Available in English, Arabic, and Hebrew with full RTL support.",
+        "The platform combines education with entertainment, allowing children to learn important STEM subjects while playing and exploring the Nickelodeon universe. Each lesson is carefully designed to be both educational and engaging, with progress tracking and increasing difficulties that go side-by-side with the topics learned in the lessons",
       ],
       keyFeatures: [
-        "8 interactive lessons across multiple subjects (Science, Math, Language Arts, and more)",
-        "5 unique educational mini-games with increasing difficulty levels",
+        "Interactive lessons across multiple subjects (Science, Math, Space and Coding)",
+        "5 Unique educational mini-games with increasing difficulty levels",
         "Multi-language support: English, Arabic, and Hebrew with full RTL support",
-        "Dynamic adventure progression with conditional content based on lesson completion",
-        "Comprehensive UI systems for lessons, mini-games, and navigation",
+        "Special Adventure \"Escape Room\"-like games that use learned knowledge in order to solve puzzles",
+        "Comprehensive UI systems for lessons, mini-games, navigation, dialogue, and more",
         "Cloud save functionality for progress tracking across devices",
       ],
       technicalHighlights: [
-        "Implemented a robust dialogue system, managing branching conversations and character interactions",
+        "Developed a robust Adventure game - an \"Escape Room\" minigame, complete with a level editor and a dialogue system",
         "Developed complex UI systems for lessons and mini-games with responsive layouts optimized for various mobile devices",
-        "Created an adventure panel system with conditional content display based on player progress",
-        "Built a comprehensive profile management system including avatar customization and user settings",
+        "Created a unique profile panel to display the players achievements and avatar",
         "Implemented full localization system supporting RTL languages (Arabic, Hebrew) with proper text alignment and UI mirroring",
         "Optimized performance for mobile platforms ensuring smooth gameplay on low-end devices",
-        "Integrated cloud save system for seamless progress synchronization",
+        "Integrated seamless screen-switching animation system for smooth transitions and no loading times",
+	"Added and edited countless effects and animations using code, particle effects and shaders to make a satisfying user experience across the platform",
       ],
       myRole: [
-        "Developed and integrated the DialogueSystem, enabling writers to create branching narratives without code modifications",
-        "Designed and implemented the profile management system including avatar selection, customization options, and user preferences",
-        "Created the adventure progression system that dynamically unlocks content based on lesson completion",
-        "Built UI systems for multiple mini-games and interactive lessons, ensuring intuitive and child-friendly interfaces",
+        "Developed and integrated the Adventure games",
+        "Designed and implemented the profile management system including avatar selection and displaying user achievements",
+        "Created a system for seamless navigation across the platform",
+        "Built UI systems for lessons, minigames and popups",
         "Implemented the localization framework supporting three languages with full RTL support for Arabic and Hebrew",
+	"Designed and implemented animations, procedural content and menus"
         "Collaborated with artists and game designers to integrate assets and ensure visual consistency across the application",
-        "Participated in code reviews and maintained clean, documented code following Unity best practices",
+        "Participated in code reviews, managed the git repository and maintained clean, documented code following Unity best practices",
+	"Performed and later managed quality assurance throughout the application",
       ],
     },
     media: {
@@ -103,7 +105,7 @@ export const projectsData: ProjectData[] = [
       showcaseVideos: [
         {
           src: "/projects/nick-academy/adventure-1.mp4",
-          caption: "Adventure Mode - Exploring the Academy",
+          caption: "Adventure Game - Loud Lab",
         },
         {
           src: "/projects/nick-academy/adventure-dialogues.mp4",
@@ -111,15 +113,15 @@ export const projectsData: ProjectData[] = [
         },
         {
           src: "/projects/nick-academy/corridor-flow.mp4",
-          caption: "Navigation and Level Flow",
+          caption: "Navigation and Screen Flow",
         },
         {
           src: "/projects/nick-academy/profile-panel.mp4",
-          caption: "Profile Preview System",
+          caption: "Profile Panel",
         },
         {
           src: "/projects/nick-academy/screen-swap.mp4",
-          caption: "UI Transitions and Screen Management",
+          caption: "Screen Transitions",
         },
         {
           src: "/projects/nick-academy/space-lesson.mp4",
@@ -128,7 +130,7 @@ export const projectsData: ProjectData[] = [
       ],
     },
   },
-  {
+  { //STOPPED HERE!!
     id: 2,
     title: "Rimon Studio — NickWatch",
     description:
