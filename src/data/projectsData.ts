@@ -23,6 +23,7 @@ export interface ProjectData {
     showcaseVideos?: {
       src: string;
       caption: string;
+      mask?: string;
     }[];
   };
 }
@@ -159,6 +160,11 @@ export const projectsData: ProjectData[] = [
     },
     media: {
       showcaseVideos: [
+        {
+          src: "/projects/nickwatch/avatar.mp4",
+          caption: "Avatar Creator - Circular Smartwatch UI",
+          mask: "/projects/nickwatch/watch-mask.png",
+        },
         {
           src: "/projects/nickwatch/ninja-school.mp4",
           caption: "Ninja School Gameplay",

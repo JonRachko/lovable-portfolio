@@ -155,14 +155,35 @@ const ProjectDetail = () => {
                 {project.media.showcaseVideos.map((video, index) => (
                   <Card key={index} className="overflow-hidden">
                     <CardContent className="p-0">
-                      <video 
-                        className="w-full aspect-video" 
-                        controls 
-                        preload="metadata"
-                      >
-                        <source src={video.src} type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
+                      {video.mask ? (
+                        <div className="relative w-full aspect-square">
+                          <video 
+                            className="absolute inset-0 w-full h-full object-cover" 
+                            controls 
+                            preload="metadata"
+                            loop
+                            muted
+                            playsInline
+                          >
+                            <source src={video.src} type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                          <img 
+                            src={video.mask} 
+                            alt="" 
+                            className="absolute inset-0 w-full h-full pointer-events-none"
+                          />
+                        </div>
+                      ) : (
+                        <video 
+                          className="w-full aspect-video" 
+                          controls 
+                          preload="metadata"
+                        >
+                          <source src={video.src} type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                      )}
                       <div className="p-4">
                         <p className="text-sm text-muted-foreground">{video.caption}</p>
                       </div>
