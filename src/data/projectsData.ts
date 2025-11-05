@@ -221,4 +221,55 @@ export const projectsData: ProjectData[] = [
     },
     media: {},
   },
+  {
+    id: 4,
+    title: "TEMA Creative — Discover the Collections (Israel Museum)",
+    description:
+      "An interactive digital installation helping visitors explore and visually connect artworks and artifacts through keywords and visual relationships at the Israel Museum in Jerusalem.",
+    tags: ["Unity", "C#", "Interactive Installation", "Data Visualization", "Museum", "Touch Interface"],
+    image: "/projects/tema-creative/dtc.png",
+    links: {
+      live: "https://www.temacreative.com/temacreative-theisraelmuseum",
+    },
+    content: {
+      overview: [
+        "Commissioned by the Israel Museum in Jerusalem, Discover the Collections is an interactive digital installation designed to help visitors explore and visually connect artworks and artifacts through keywords and visual relationships. Displayed on a large touch screen at the museum's entrance, the system dynamically visualizes thousands of images and their semantic links, inviting visitors to explore the museum's collection in an intuitive and aesthetic way.",
+        "As the project's sole Unity developer, I was responsible for building the entire interactive application — from data handling and real-time visualization to user interaction and motion design. Working closely with the curators, art director, and CEO, I ensured that the artistic vision was faithfully represented while maintaining technical performance on demanding hardware.",
+        "The system parsed and displayed data from a large JSON dataset containing thousands of image–keyword relationships. I designed and implemented both the real-time sorting and visual representation of these relationships, optimizing for speed, clarity, and fluidity of motion.",
+      ],
+      keyFeatures: [
+        "Real-time relational sorting system processing tens of thousands of keyword–image connections per interaction",
+        "Dynamic visualization of museum collection with semantic links between artworks",
+        "Large touch screen interface optimized for museum entrance deployment",
+        "Seamless performance with background loading and coroutine-based optimization",
+        "Custom shader design for enhanced image presentation",
+        "Permanent installation running continuously at the Israel Museum",
+      ],
+      technicalHighlights: [
+        "Developed a real-time relational sorting system that efficiently processed tens of thousands of keyword–image connections per interaction",
+        "Designed a custom shader to enhance image presentation, contributing to the exhibit's cohesive artistic identity",
+        "Engineered background loading and coroutine-based optimization, enabling seamless performance with no visible lag or loading times",
+        "Built the entire Unity application architecture, integrating the visual design, input system, and data management pipeline",
+        "Optimized data parsing and display for large JSON datasets containing thousands of image–keyword relationships",
+        "Collaborated with curators, art director, and CEO to faithfully represent artistic vision while maintaining technical performance",
+      ],
+      myRole: [
+        "Served as the sole Unity developer responsible for the entire interactive application",
+        "Built complete application from data handling and real-time visualization to user interaction and motion design",
+        "Designed and implemented real-time sorting and visual representation of artwork relationships",
+        "Created custom shaders to enhance image presentation and artistic identity",
+        "Optimized performance for demanding hardware with background loading and coroutine-based systems",
+        "Collaborated closely with curators, art director, and CEO to align technical implementation with artistic vision",
+        "Delivered permanent installation that runs continuously as part of the museum's visitor experience",
+      ],
+    },
+    media: {
+      showcaseVideos: [
+        {
+          src: "/projects/tema-creative/dtc-live.gif",
+          caption: "Live Installation at Israel Museum",
+        },
+      ],
+    },
+  },
 ];
