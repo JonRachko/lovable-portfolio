@@ -104,13 +104,13 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:Jonrachko@gmail.com"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
                     <Mail className="text-primary" size={20} />
                   </div>
-                  <span>your.email@example.com</span>
+                  <span>Jonrachko@gmail.com</span>
                 </a>
               </CardContent>
             </Card>
@@ -121,19 +121,7 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <a
-                  href="https://github.com/yourusername"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
-                >
-                  <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-                    <Github className="text-primary" size={20} />
-                  </div>
-                  <span>GitHub</span>
-                  <ExternalLink className="ml-auto" size={16} />
-                </a>
-                <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/jonathan-ratzkovsky-1502771aa/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
@@ -145,7 +133,7 @@ const Contact = () => {
                   <ExternalLink className="ml-auto" size={16} />
                 </a>
                 <a
-                  href="https://yourusername.itch.io"
+                  href="https://jonshmon.itch.io"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"

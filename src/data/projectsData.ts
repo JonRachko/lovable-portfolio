@@ -313,6 +313,18 @@ export const projectsData: ProjectData[] = [
           src: "/projects/tema-creative/dtc-1.png",
           caption: "Interactive visualization of museum collections",
         },
+        {
+          src: "/projects/tema-creative/keyword-showcase.gif",
+          caption: "Keyword-based visual exploration system in action",
+        },
+        {
+          src: "/projects/tema-creative/me-pointing-1.jpg",
+          caption: "Presenting the interactive installation at Israel Museum",
+        },
+        {
+          src: "/projects/tema-creative/me-pointing-2.jpg",
+          caption: "Demonstrating the collection exploration interface",
+        },
       ],
     },
   },

@@ -2,9 +2,11 @@ import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { getActiveResumePath } from "@/config/resume";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const resumePath = getActiveResumePath();
 
   const links = [
     { to: "/", label: "Home" },
@@ -37,7 +39,7 @@ const Navbar = () => {
               </NavLink>
             ))}
             <Button asChild size="sm">
-              <a href="/resume.pdf" download>
+              <a href={resumePath} download>
                 Resume
               </a>
             </Button>
@@ -71,7 +73,7 @@ const Navbar = () => {
               </NavLink>
             ))}
             <Button asChild size="sm" className="w-fit">
-              <a href="/resume.pdf" download>
+              <a href={resumePath} download>
                 Resume
               </a>
             </Button>
