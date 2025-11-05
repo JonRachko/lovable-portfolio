@@ -35,6 +35,14 @@ export interface ProjectData {
       caption: string;
       link?: string;
     }[];
+    showcaseImageGroups?: {
+      title: string;
+      images: {
+        src: string;
+        caption: string;
+        link?: string;
+      }[];
+    }[];
   };
 }
 
@@ -368,6 +376,98 @@ export const projectsData: ProjectData[] = [
           src: "/projects/utah-tech-labs/makeover-plus.png",
           caption: "Makeover Plus - Photo Styling App",
           link: "https://play.google.com/store/apps/details?id=com.UtahTechLabs.MakeoverPlus&pcampaignid=web_share",
+        },
+      ],
+    },
+  },
+  {
+    id: 6,
+    title: "Game Jams",
+    description:
+      "Two award-winning game jam submissions: Major Doctor Bing Bong (GGJ 2024, 1st place) and SIDE EFFECTS (GMTK 2025, Top 20 globally).",
+    tags: ["Unity", "C#", "Game Jam", "Rapid Prototyping", "Team Collaboration", "Shaders"],
+    image: "/projects/game-jams/major-doctor-bing-bong-cover.png",
+    links: {},
+    content: {
+      overview: [
+        "Game jams have been an invaluable part of my development journey, pushing me to rapidly prototype creative ideas under strict time constraints while collaborating with new teams. These two submissions showcase different aspects of my skillset: technical leadership and architecture in Major Doctor Bing Bong, and production coordination with visual polish in SIDE EFFECTS.",
+        "Major Doctor Bing Bong (Global Game Jam 2024) won 1st place at the IAC venue for the 'Make Me Laugh' theme. As lead programmer, I designed a modular architecture that allowed our team to independently develop and integrate multiple minigames into a cohesive time management experience.",
+        "SIDE EFFECTS (GMTK Game Jam 2025) achieved Top 20 globally out of ~10,000 entries for the 'Loop' theme. Taking a production-focused role, I coordinated between programming, art, and design teams while contributing particle effects and custom shaders that gave the game its polished aesthetic.",
+      ],
+      keyFeatures: [
+        "Major Doctor Bing Bong: Fast-paced time management game with multiple condition-specific minigames",
+        "SIDE EFFECTS: Rubik's Cube-inspired puzzle game where each face applies environmental effects to objects",
+        "Modular architecture enabling parallel development of independent game systems",
+        "Custom shaders and particle effects creating cohesive visual identity",
+        "Rapid prototyping and iteration under 48-hour time constraints",
+        "Seamless team collaboration with developers, artists, and designers",
+      ],
+      technicalHighlights: [
+        "Major Doctor Bing Bong: Designed core architecture allowing minigames to be developed and integrated independently into main gameplay loop",
+        "Major Doctor Bing Bong: Handled animation setup and technical art direction, supporting the game's playful and humorous atmosphere",
+        "SIDE EFFECTS: Developed custom shader giving the game its distinctive polished aesthetic",
+        "SIDE EFFECTS: Created particle effect systems that enhanced visual feedback and game feel",
+        "SIDE EFFECTS: Focused on clean, readable, modular code that harmonized contributions from multiple developers",
+        "SIDE EFFECTS: Coordinated programming team efforts, ensuring code cohesion across unfamiliar team members",
+        "Both projects: Delivered polished, bug-free experiences within 48-hour time constraints",
+      ],
+      myRole: [
+        "Major Doctor Bing Bong (GGJ 2024) - Lead Programmer: Designed modular game architecture, implemented animation systems, and established technical art tone",
+        "Major Doctor Bing Bong: Created core game loop allowing independent minigame development and integration",
+        "Major Doctor Bing Bong: Set up animation pipeline supporting the game's comedic and absurd energy",
+        "SIDE EFFECTS (GMTK 2025) - Programmer & Production Coordinator: Balanced hands-on development with team coordination",
+        "SIDE EFFECTS: Developed custom shaders and particle effects for visual polish and cohesion",
+        "SIDE EFFECTS: Coordinated between programming, art, and design teams ensuring smooth collaboration",
+        "SIDE EFFECTS: Maintained code quality and modularity across multiple developer contributions",
+        "Both projects: Adapted quickly to new team dynamics and contributed to winning submissions",
+      ],
+    },
+    media: {
+      showcaseImageGroups: [
+        {
+          title: "Major Doctor Bing Bong (GGJ 2024 - 1st Place)",
+          images: [
+            {
+              src: "/projects/game-jams/mdbb-gameplay-1.png",
+              caption: "Hospital Ward Management",
+              link: "https://mtklng.itch.io/major-doctor-bing-bong",
+            },
+            {
+              src: "/projects/game-jams/mdbb-gameplay-2.png",
+              caption: "Patient Interaction System",
+              link: "https://mtklng.itch.io/major-doctor-bing-bong",
+            },
+            {
+              src: "/projects/game-jams/mdbb-gameplay-3.png",
+              caption: "Minigame - Bubble Blowing",
+              link: "https://mtklng.itch.io/major-doctor-bing-bong",
+            },
+            {
+              src: "/projects/game-jams/mdbb-gameplay-4.png",
+              caption: "Physical Comedy Animations",
+              link: "https://mtklng.itch.io/major-doctor-bing-bong",
+            },
+          ],
+        },
+        {
+          title: "SIDE EFFECTS (GMTK 2025 - Top 20 Globally)",
+          images: [
+            {
+              src: "/projects/game-jams/side-effects-1.png",
+              caption: "Rubik's Cube Puzzle Mechanics",
+              link: "https://slamdan.itch.io/side-effects",
+            },
+            {
+              src: "/projects/game-jams/side-effects-2.png",
+              caption: "Environmental Effects System",
+              link: "https://slamdan.itch.io/side-effects",
+            },
+            {
+              src: "/projects/game-jams/side-effects-3.png",
+              caption: "Custom Shader & Particle Effects",
+              link: "https://slamdan.itch.io/side-effects",
+            },
+          ],
         },
       ],
     },

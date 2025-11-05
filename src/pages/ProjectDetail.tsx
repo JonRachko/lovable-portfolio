@@ -271,6 +271,49 @@ const ProjectDetail = () => {
               </div>
             </div>
           )}
+
+          {/* Showcase Image Groups (for projects with multiple sections) */}
+          {project.media.showcaseImageGroups && project.media.showcaseImageGroups.length > 0 && (
+            <div className="space-y-12">
+              {project.media.showcaseImageGroups.map((group, groupIndex) => (
+                <div key={groupIndex}>
+                  <h2 className="text-2xl font-heading font-bold mb-6">{group.title}</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {group.images.map((image, index) => (
+                      <Card key={index} className="overflow-hidden">
+                        <CardContent className="p-0">
+                          {image.link ? (
+                            <a href={image.link} target="_blank" rel="noopener noreferrer" className="block group">
+                              <img 
+                                src={image.src} 
+                                alt={image.caption}
+                                className="w-full aspect-video object-cover transition-transform group-hover:scale-105"
+                              />
+                              <div className="p-4 flex items-center justify-between">
+                                <p className="text-sm text-muted-foreground">{image.caption}</p>
+                                <ExternalLink className="text-primary opacity-0 group-hover:opacity-100 transition-opacity" size={16} />
+                              </div>
+                            </a>
+                          ) : (
+                            <>
+                              <img 
+                                src={image.src} 
+                                alt={image.caption}
+                                className="w-full aspect-video object-cover"
+                              />
+                              <div className="p-4">
+                                <p className="text-sm text-muted-foreground">{image.caption}</p>
+                              </div>
+                            </>
+                          )}
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>
