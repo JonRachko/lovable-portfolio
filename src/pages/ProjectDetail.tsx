@@ -44,6 +44,45 @@ const ProjectDetail = () => {
                 </span>
               ))}
             </div>
+            
+            {/* Awards */}
+            {project.awards && project.awards.length > 0 && (
+              <div className="flex flex-wrap gap-4 mb-6">
+                {project.awards.map((award, index) => (
+                  award.link ? (
+                    <a 
+                      key={index}
+                      href={award.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="transition-transform hover:scale-105"
+                    >
+                      {award.badge ? (
+                        <img 
+                          src={award.badge} 
+                          alt={award.name}
+                          className="h-16 md:h-20"
+                        />
+                      ) : (
+                        <span className="text-sm font-semibold text-primary">{award.name}</span>
+                      )}
+                    </a>
+                  ) : (
+                    award.badge ? (
+                      <img 
+                        key={index}
+                        src={award.badge} 
+                        alt={award.name}
+                        className="h-16 md:h-20"
+                      />
+                    ) : (
+                      <span key={index} className="text-sm font-semibold text-primary">{award.name}</span>
+                    )
+                  )
+                ))}
+              </div>
+            )}
+
             <div className="flex flex-wrap gap-4">
               {project.links.playStore && (
                 <Button asChild>

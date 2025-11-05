@@ -5,6 +5,11 @@ export interface ProjectData {
   tags: string[];
   image: string;
   logo?: string;
+  awards?: {
+    name: string;
+    badge?: string;
+    link?: string;
+  }[];
   links: {
     playStore?: string;
     appStore?: string;
@@ -40,14 +45,21 @@ export const projectsData: ProjectData[] = [
       "An educational adventure game for children featuring interactive lessons, mini-games, and engaging storytelling across multiple subjects.",
     tags: ["Unity", "C#", "Mobile", "Educational", "UI/UX", "Localization"],
     image: "/projects/nick-academy/banner.png",
+    awards: [
+      {
+        name: "GESA People's Choice Award Winner",
+        badge: "/projects/nick-academy/gesa-award.png",
+        link: "https://www.globaledtechawards.org/copy-of-2023-winners",
+      },
+    ],
     links: {
       playStore: "https://play.google.com/store/apps/details?id=com.KFFE.NickAcademy&pcampaignid=web_share",
       youtube: "https://www.youtube.com/watch?v=xsW3PM5whWg",
     },
     content: {
       overview: [
-        "Nick Academy is an educational adventure game developed by the Kaplan Foundation for Equity in Education (KFEE). As a Junior Unity Programmer, I contributed to creating an engaging learning experience for children through interactive lessons, mini-games, and storytelling.",
-        "The app features 8 comprehensive lessons across multiple subjects, 5 unique mini-games, and a dialogue system that brings characters to life. Available in English, Arabic, and Hebrew with full RTL support.",
+        "Nick Academy is an educational adventure game developed by the Kaplan Foundation for Equity in Education (KFEE). Winner of the GESA People's Choice Award, this project demonstrates excellence in educational game design and user engagement.",
+        "As a Junior Unity Programmer, I contributed to creating an engaging learning experience for children through interactive lessons, mini-games, and storytelling. The app features 8 comprehensive lessons across multiple subjects, 5 unique mini-games, and a dialogue system that brings characters to life. Available in English, Arabic, and Hebrew with full RTL support.",
         "The game combines education with entertainment, allowing children to explore a vibrant academy while learning through play. Each lesson is carefully designed to be both educational and engaging, with progress tracking and profile customization.",
       ],
       keyFeatures: [
@@ -114,13 +126,20 @@ export const projectsData: ProjectData[] = [
       "A children's smartwatch with interactive games and activities featuring Nickelodeon characters like SpongeBob and TMNT, combining accelerometer-based entertainment with safety features.",
     tags: ["Unity", "C#", "Wearables", "Game Development", "QA", "Localization", "Performance"],
     image: "/projects/nickwatch/NickWatch_Banner.png",
+    awards: [
+      {
+        name: "RedDot Design Award Winner 2024",
+        badge: "/projects/nickwatch/reddot-winner-2024.png",
+        link: "https://www.red-dot.org/project/nickwatch-68476",
+      },
+    ],
     links: {
       youtube: "https://www.youtube.com/watch?v=X5ki4-8Y4IE",
       live: "https://www.nickwatch.com/",
     },
     content: {
       overview: [
-        "NickWatch is a children's smartwatch developed by Rimon Studio for Nickelodeon, featuring games and activities with popular characters like SpongeBob SquarePants and the Teenage Mutant Ninja Turtles. It combines accelerometer-based entertainment with safety features, allowing for two-way voice communication and approved contact management.",
+        "NickWatch is a children's smartwatch developed by Rimon Studio for Nickelodeon, featuring games and activities with popular characters like SpongeBob SquarePants and the Teenage Mutant Ninja Turtles. Winner of the RedDot Design Award 2024, this innovative wearable combines accelerometer-based entertainment with safety features, allowing for two-way voice communication and approved contact management.",
         "As the initial QA technician for NickWatch, I conducted comprehensive manual and automated tests, setting the foundation for the QA process and later training new technicians. I then transitioned to a developer role where I created two games from scratch and optimized existing ones, enhancing performance by 20-30% throughout the Play app.",
         "My technical contributions spanned multiple critical systems: dynamic localization across eleven languages (including RTL support for Arabic and Hebrew), a sophisticated haptics feedback system used in every game, an internal analytics system that enabled data-driven improvements, and various innovative features like the Sprite Randomizer and Fidgets mini-app.",
       ],
@@ -180,6 +199,10 @@ export const projectsData: ProjectData[] = [
         {
           src: "/projects/nickwatch/text-properties.mp4",
           caption: "Dynamic Localization System - TextByLanguage Editor",
+        },
+        {
+          src: "/projects/nickwatch/tunnel-runner.mp4",
+          caption: "Tunnel Runner 2.0 - Complete Game Overhaul",
         },
       ],
     },
