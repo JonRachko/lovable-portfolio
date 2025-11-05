@@ -75,18 +75,18 @@ export const projectsData: ProjectData[] = [
         "Interactive lessons across multiple subjects (Science, Math, Space and Coding)",
         "5 Unique educational mini-games with increasing difficulty levels",
         "Multi-language support: English, Arabic, and Hebrew with full RTL support",
-        "Special Adventure \"Escape Room\"-like games that use learned knowledge in order to solve puzzles",
+        'Special Adventure "Escape Room"-like games that use learned knowledge in order to solve puzzles',
         "Comprehensive UI systems for lessons, mini-games, navigation, dialogue, and more",
         "Cloud save functionality for progress tracking across devices",
       ],
       technicalHighlights: [
-        "Developed a robust Adventure game - an \"Escape Room\" minigame, complete with a level editor and a dialogue system",
+        'Developed a robust Adventure game - an "Escape Room" minigame, complete with a level editor and a dialogue system',
         "Developed complex UI systems for lessons and mini-games with responsive layouts optimized for various mobile devices",
         "Created a unique profile panel to display the players achievements and avatar",
         "Implemented full localization system supporting RTL languages (Arabic, Hebrew) with proper text alignment and UI mirroring",
         "Optimized performance for mobile platforms ensuring smooth gameplay on low-end devices",
         "Integrated seamless screen-switching animation system for smooth transitions and no loading times",
-	"Added and edited countless effects and animations using code, particle effects and shaders to make a satisfying user experience across the platform",
+        "Added and edited countless effects and animations using code, particle effects and shaders to make a satisfying user experience across the platform",
       ],
       myRole: [
         "Developed and integrated the Adventure games",
@@ -94,10 +94,10 @@ export const projectsData: ProjectData[] = [
         "Created a system for seamless navigation across the platform",
         "Built UI systems for lessons, minigames and popups",
         "Implemented the localization framework supporting three languages with full RTL support for Arabic and Hebrew",
-	"Designed and implemented animations, procedural content and menus"
+        "Designed and implemented animations, procedural content and menus",
         "Collaborated with artists and game designers to integrate assets and ensure visual consistency across the application",
         "Participated in code reviews, managed the git repository and maintained clean, documented code following Unity best practices",
-	"Performed and later managed quality assurance throughout the application",
+        "Performed and later managed quality assurance throughout the application",
       ],
     },
     media: {
@@ -130,7 +130,8 @@ export const projectsData: ProjectData[] = [
       ],
     },
   },
-  { //STOPPED HERE!!
+  {
+    //STOPPED HERE!!
     id: 2,
     title: "Rimon Studio — NickWatch",
     description:
