@@ -25,6 +25,10 @@ export interface ProjectData {
       caption: string;
       mask?: string;
     }[];
+    showcaseImages?: {
+      src: string;
+      caption: string;
+    }[];
   };
 }
 
@@ -264,10 +268,18 @@ export const projectsData: ProjectData[] = [
       ],
     },
     media: {
-      showcaseVideos: [
+      showcaseImages: [
+        {
+          src: "/projects/tema-creative/dtc-2.jpg",
+          caption: "Visitors exploring the interactive installation",
+        },
         {
           src: "/projects/tema-creative/dtc-live.gif",
           caption: "Live Installation at Israel Museum",
+        },
+        {
+          src: "/projects/tema-creative/dtc-1.png",
+          caption: "Interactive visualization of museum collections",
         },
       ],
     },

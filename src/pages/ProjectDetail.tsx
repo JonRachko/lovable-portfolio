@@ -193,6 +193,29 @@ const ProjectDetail = () => {
               </div>
             </div>
           )}
+
+          {/* Showcase Images */}
+          {project.media.showcaseImages && project.media.showcaseImages.length > 0 && (
+            <div>
+              <h2 className="text-2xl font-heading font-bold mb-6">Gallery</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {project.media.showcaseImages.map((image, index) => (
+                  <Card key={index} className="overflow-hidden">
+                    <CardContent className="p-0">
+                      <img 
+                        src={image.src} 
+                        alt={image.caption}
+                        className="w-full aspect-video object-cover"
+                      />
+                      <div className="p-4">
+                        <p className="text-sm text-muted-foreground">{image.caption}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
