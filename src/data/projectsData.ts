@@ -180,4 +180,45 @@ export const projectsData: ProjectData[] = [
       ],
     },
   },
+  {
+    id: 3,
+    title: "Surgical Science — VR Medical Simulation",
+    description:
+      "A VR first-responder simulation training medics in real-time emergency procedures, integrating physical sensors with an interactive 3D environment.",
+    tags: ["Unity", "C#", "VR", "Animation", "Medical Simulation", "Hardware Integration"],
+    image: "/projects/surgical-science/simulator-preview.png",
+    links: {
+      live: "https://vimeo.com/1080810960?fl=pl&fe=sh",
+    },
+    content: {
+      overview: [
+        "Simbionix (a Surgical Science company) develops advanced medical training simulations. During my time there, I contributed to a VR first-responder simulation project designed to train medics in real-time emergency procedures. The system integrated physical sensors and a mannequin with a fully interactive 3D environment, providing realistic feedback and situational accuracy.",
+        "I was responsible for designing and implementing a modular humanoid animation system that allowed the virtual medic to respond dynamically to real-world sensor data. The system blended animated and procedural motion using Unity's animation rigging tools, ensuring natural interaction between the virtual medic, patient, and instruments.",
+        "I collaborated closely with the animation team to define the animation pipeline and create consistent motion logic—determining pivot points, blending layered animations, and maintaining physical realism during complex scenarios.",
+      ],
+      keyFeatures: [
+        "Real-time VR simulation for first-responder emergency training",
+        "Integration of physical sensors with mannequin hardware",
+        "Fully interactive 3D environment with realistic medical scenarios",
+        "Dynamic virtual medic responses synchronized with real-world actions",
+        "Modular humanoid animation system with procedural motion blending",
+      ],
+      technicalHighlights: [
+        "Created a real-time animation controller that synchronized the virtual medic's posture and actions with external hardware sensors",
+        "Implemented adaptive behaviors to maintain realism—e.g., transitioning from leaning to walking when tools moved beyond reach, and adjusting arm, shoulder, and body motion in response to tool orientation",
+        "Built the system for extensibility, supporting multiple animation states and override conditions without manual retargeting",
+        "Utilized Unity's animation rigging tools to blend animated and procedural motion naturally",
+        "Collaborated with animation team to establish consistent motion logic and physical realism standards",
+      ],
+      myRole: [
+        "Designed and implemented the modular humanoid animation system for the virtual medic",
+        "Created real-time animation controller synchronizing virtual actions with physical sensor data",
+        "Developed adaptive behavior system maintaining realism across complex medical scenarios",
+        "Collaborated with animation team to define the animation pipeline and motion logic",
+        "Built extensible architecture supporting multiple animation states without manual retargeting",
+        "Ensured natural blending between animated and procedural motion using Unity's rigging tools",
+      ],
+    },
+    media: {},
+  },
 ];
