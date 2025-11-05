@@ -131,7 +131,7 @@ export const projectsData: ProjectData[] = [
     },
   },
   {
-    //STOPPED HERE!!
+    //STOPPED HERE!!!
     id: 2,
     title: "Rimon Studio — NickWatch",
     description:
