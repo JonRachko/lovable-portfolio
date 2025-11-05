@@ -49,7 +49,7 @@ export interface ProjectData {
 export const projectsData: ProjectData[] = [
   {
     id: 1,
-    title: "Nick Academy",
+    title: "Rimon Studio — Nick Academy",
     description:
       "An educational adventure game for children featuring interactive lessons, mini-games, and engaging storytelling across multiple subjects.",
     tags: ["Unity", "C#", "Mobile", "Educational", "UI/UX", "Localization"],
@@ -130,7 +130,7 @@ export const projectsData: ProjectData[] = [
   },
   {
     id: 2,
-    title: "NickWatch",
+    title: "Rimon Studio — NickWatch",
     description:
       "A children's smartwatch with interactive games and activities featuring Nickelodeon characters like SpongeBob and TMNT, combining accelerometer-based entertainment with safety features.",
     tags: ["Unity", "C#", "Wearables", "Game Development", "QA", "Localization", "Performance"],
