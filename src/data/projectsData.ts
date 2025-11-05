@@ -307,4 +307,67 @@ export const projectsData: ProjectData[] = [
       ],
     },
   },
+  {
+    id: 5,
+    title: "Utah Tech Labs — Mobile Games",
+    description:
+      "A collection of three mobile games developed during my first role out of college: Cure Commando (resource management), DotBot (3D puzzle platformer), and Makeover Plus (photo styling app).",
+    tags: ["Unity", "C#", "Mobile", "Game Development", "Level Design", "UI/UX"],
+    image: "/projects/utah-tech-labs/cure-commando.png",
+    links: {
+      playStore: "https://play.google.com/store/apps/details?id=com.UtahTechLabs.CureCommando&hl=en&gl=US",
+    },
+    content: {
+      overview: [
+        "Utah Tech Labs was my first professional role straight out of college. Our small team in Lithuania was tasked with developing mobile games, and in just ~4 months, we successfully released two games with a third in development.",
+        "Working as the lead programmer on these projects, I was responsible for all programming aspects, from core gameplay mechanics to UI systems and level editors. This experience taught me the importance of rapid development, scalability, and creating tools that empower the entire team.",
+        "Each game presented unique challenges: Cure Commando required fast-paced resource management mechanics, DotBot demanded a robust programming-based puzzle system, and Makeover Plus needed intuitive photo manipulation and customization features.",
+      ],
+      keyFeatures: [
+        "Cure Commando: Fast-paced resource management game where players command a hazmat team to cleanse a city from a viral outbreak",
+        "DotBot: Innovative 3D puzzle platformer where players program a robot to navigate through various challenges",
+        "Makeover Plus: Photo styling app with drag-and-drop customization for clothing, hair, accessories, and more",
+        "Custom level editors for both Cure Commando and DotBot enabling rapid content creation",
+        "Scalable architecture allowing easy additions and modifications for future updates",
+        "Optimized mobile performance across all three applications",
+      ],
+      technicalHighlights: [
+        "Developed complete game programming for Cure Commando as sole programmer, implementing resource management mechanics and strategic deployment systems",
+        "Created intuitive level editors for both Cure Commando and DotBot, facilitating quick and creative level designs",
+        "Built DotBot's core programming mechanics allowing players to code robot behavior with adjustable movement, jumping, and timing",
+        "Implemented Makeover Plus's photo capture system and drag-and-drop interface for real-time customization",
+        "Designed all three games with scalability in mind, enabling seamless content additions post-release",
+        "Managed rapid development cycles across multiple projects simultaneously, maintaining high quality standards",
+        "Optimized performance for various mobile devices ensuring smooth gameplay experiences",
+      ],
+      myRole: [
+        "Lead Programmer for Cure Commando: Solely responsible for all game programming, ensuring smooth gameplay and strategic resource management mechanics",
+        "Lead Programmer for DotBot: Handled complete programming implementation, crafting core mechanics and puzzle-solving logic",
+        "Initial Programmer for Makeover Plus: Laid foundational groundwork for UI and core functionality before transitioning to other team members",
+        "Developed custom level editors for multiple games, empowering designers to create diverse content without code modifications",
+        "Implemented photo capture and manipulation systems for Makeover Plus, including drag-and-drop customization",
+        "Ensured visual appeal and interactive ease across all projects, enhancing player experience",
+        "Built scalable architectures supporting future content additions and feature expansions",
+      ],
+    },
+    media: {
+      showcaseVideos: [
+        // Placeholder for videos to be added later
+      ],
+      showcaseImages: [
+        {
+          src: "/projects/utah-tech-labs/cure-commando.png",
+          caption: "Cure Commando - Resource Management Game",
+        },
+        {
+          src: "/projects/utah-tech-labs/dotbot.png",
+          caption: "DotBot - 3D Puzzle Platformer",
+        },
+        {
+          src: "/projects/utah-tech-labs/makeover-plus.png",
+          caption: "Makeover Plus - Photo Styling App",
+        },
+      ],
+    },
+  },
 ];
