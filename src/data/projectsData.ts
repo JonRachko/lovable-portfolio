@@ -287,7 +287,7 @@ export const projectsData: ProjectData[] = [
         "Engineered background loading and coroutine-based optimization, enabling seamless performance with no visible lag or loading times",
         "Built the entire Unity application architecture, integrating the visual design, input system, and data management pipeline",
         "Collaborated with curators, art director, and CEO to faithfully represent artistic vision while maintaining technical performance",
-	"Participated in artistic decision-making processes and delivered the artistic vision of the project"
+        "Participated in artistic decision-making processes and delivered the artistic vision of the project",
       ],
       myRole: [
         "Served as the sole Unity developer responsible for the entire interactive application",
@@ -401,8 +401,7 @@ export const projectsData: ProjectData[] = [
     links: {},
     content: {
       overview: [
-        "Game jams have always been a core part of my development as a game developer, giving me the opportunity to participate in a full game's lifecycle in just a couple of days at a time. These are unique challenges that I learn from every time I participate in one, and most importantly - they're fun!
-Here I'm showcasing 2 prize winning game jam submissions I was lucky enough to be a part of: Major Doctor Bing Bong, and SIDE EFFECTS. Most of the other game jam submissions are on my itch.io page.",
+        "Game jams have always been a core part of my development as a game developer, giving me the opportunity to participate in a full game's lifecycle in just a couple of days at a time. These are unique challenges that I learn from every time I participate in one, and most importantly - they're fun! Here I'm showcasing 2 prize winning game jam submissions I was lucky enough to be a part of: Major Doctor Bing Bong, and SIDE EFFECTS. Most of the other game jam submissions are on my itch.io page.",
         "Major Doctor Bing Bong (Global Game Jam 2024) won 1st place at the IAC for the 'Make Me Laugh' theme. As lead programmer, I designed a modular architecture that allowed our team to independently develop and integrate multiple minigames into a cohesive time management experience.",
         "SIDE EFFECTS (GMTK Game Jam 2025) achieved Top 20 globally out of just under 10,000 entries for the 'Loop' theme. Taking a production-focused role, I coordinated between programming, art, and design teams while contributing some of the core functionalities, particle effects and custom shaders.",
       ],
