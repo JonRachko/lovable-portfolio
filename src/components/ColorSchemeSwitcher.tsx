@@ -24,6 +24,9 @@ const ColorSchemeSwitcher = () => {
     if (saved && schemes.find((s) => s.id === saved)) {
       setCurrentScheme(saved);
       applyScheme(saved);
+    } else {
+      // Apply default theme
+      applyScheme("dark-blue");
     }
   }, []);
 
