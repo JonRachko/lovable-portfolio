@@ -88,8 +88,7 @@ const Home = () => {
               about. But what truly drives me is turning code into emotion: a mesmerizing shader, a procedural world
               that's different every time you start a new save, or a gradually speeding obstacle course that pumps your
               heart rate into the thousands. I’m a passionate problem-solver, a communicator, and a bridge between
-              creative and technical worlds. Whether I’m writing code or leading a discussion between artists and
-              programmers, I love finding the language that connects everyone — and turns visions into experiences.
+              creative and technical worlds.
             </p>
           </Card>
         </div>
