@@ -23,7 +23,7 @@ const Navbar = () => {
             to="/"
             className="text-2xl font-heading font-bold text-foreground hover:text-primary transition-colors"
           >
-            Portfolio
+            Jon Rachko
           </NavLink>
 
           {/* Desktop Navigation */}
