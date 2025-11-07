@@ -8,8 +8,8 @@ type ColorScheme = "blue" | "purple" | "purple-dark" | "purple-gradient" | "dark
 const schemes = [
   { id: "dark-blue" as ColorScheme, name: "Dark Blue", color: "#020c45", description: "Dark Mode, But Lighter" },
   { id: "blue" as ColorScheme, name: "Ocean Blue", color: "#0BA5EC", description: "Techy Vibes" },
-  { id: "purple" as ColorScheme, name: "Lavender Light", color: "#F5F0FF", description: "Soft and Dreamy" },
-  { id: "purple-dark" as ColorScheme, name: "Purple Dark", color: "#1A0B2E", description: "Deep and Mysterious" },
+  { id: "purple" as ColorScheme, name: "Lavender Light", color: "#F5F0FF", description: "It's Soft And Dreamy" },
+  { id: "purple-dark" as ColorScheme, name: "Purple Dark", color: "#1A0B2E", description: "Deep And Mysterious" },
   { id: "purple-gradient" as ColorScheme, name: "Very Purple", color: "#3D0066", description: "If You Like Purple" },
   { id: "sunrise" as ColorScheme, name: "Sunrise Yellow", color: "#FDB930", description: "For the Optimists" },
   { id: "mint" as ColorScheme, name: "Mint Green", color: "#10B981", description: "Made From 100% Recycled Pixels" },
@@ -81,7 +81,7 @@ const ColorSchemeSwitcher = () => {
       <div className="flex items-center gap-3">
         {isOpen && (
           <span className="text-sm font-medium text-foreground bg-card px-3 py-2 rounded-lg shadow-md animate-fade-in">
-            Choose a theme!
+            Choose Your Own Theme!
           </span>
         )}
         <Button size="lg" onClick={() => setIsOpen(!isOpen)} className="rounded-full w-14 h-14 shadow-lg">
