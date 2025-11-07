@@ -21,11 +21,16 @@ const ColorSchemeSwitcher = () => {
 
   useEffect(() => {
     const saved = localStorage.getItem("colorScheme") as ColorScheme;
-    if (saved && schemes.find((s) => s.id === saved)) {
+    // Validate saved scheme exists in our schemes array
+    const isValidScheme = saved && schemes.find((s) => s.id === saved);
+    
+    if (isValidScheme) {
       setCurrentScheme(saved);
       applyScheme(saved);
     } else {
-      // Apply default theme
+      // Clear invalid localStorage and apply default theme
+      localStorage.removeItem("colorScheme");
+      setCurrentScheme("dark-blue");
       applyScheme("dark-blue");
     }
   }, []);
