@@ -11,14 +11,14 @@ const Home = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 space-y-6">
             <h1 className="text-5xl md:text-6xl font-heading font-bold text-foreground">
-              Hi, I'm <span className="text-primary">Your Name</span>
+              Hi, I'm <span className="text-primary">Jon Rachko</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-heading text-muted-foreground">
               Game Developer & Technical Artist
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
               Specializing in Unity programming, technical art, and cross-team coordination. 
-              I bring ideas to life through code and creative problem-solving.
+              I turn visions into experiences.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg">
@@ -29,16 +29,16 @@ const Home = () => {
               </Button>
             </div>
             <div className="flex gap-4 pt-4">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/JonRachko" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/jonathan-ratzkovsky-1502771aa/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="https://yourusername.itch.io" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://jonshmon.itch.io/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <ExternalLink size={24} />
               </a>
-              <a href="mailto:your.email@example.com" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="mailto:jonrachko@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
                 <Mail size={24} />
               </a>
             </div>
@@ -62,14 +62,12 @@ const Home = () => {
           </h2>
           <Card className="max-w-4xl mx-auto p-8 shadow-lg">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              [Your bio goes here - talk about your background, passion for game development, 
-              and what drives you in your work. Mention your experience with Unity, technical art, 
-              and how you collaborate with teams.]
+              I've loved games of all kinds my entire life, and the moment I learned to program I knew that’s where I'm headed. My very first project was a text-based RPG — simple, messy, and absolutely magical. Since then, I’ve been chasing that same spark: creating fun.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              [Add more details about your approach to game development, notable achievements, 
-              or what makes your work unique. This is where you can showcase your personality 
-              and professional philosophy.]
+              I see programming as a puzzle and an art form. Finding elegant solutions, building smart, modular systems, or hiding clever loading tricks behind smooth animations — those are the details I get genuinely excited about. But what truly drives me is turning code into emotion: a mesmerizing shader, a procedural world that's different every time you start a new save, or a gradually speeding obstacle course that pumps your heart rate into the thousands.
+
+I’m a passionate problem-solver, a communicator, and a bridge between creative and technical worlds. Whether I’m writing code or leading a discussion between artists and programmers, I love finding the language that connects everyone — and turns visions into experiences.
             </p>
           </Card>
         </div>
