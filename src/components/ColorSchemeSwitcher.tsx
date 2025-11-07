@@ -78,9 +78,16 @@ const ColorSchemeSwitcher = () => {
         </Card>
       )}
 
-      <Button size="lg" onClick={() => setIsOpen(!isOpen)} className="rounded-full w-14 h-14 shadow-lg">
-        <Palette size={24} />
-      </Button>
+      <div className="flex items-center gap-3">
+        {isOpen && (
+          <span className="text-sm font-medium text-foreground bg-card px-3 py-2 rounded-lg shadow-md animate-fade-in">
+            Choose a theme!
+          </span>
+        )}
+        <Button size="lg" onClick={() => setIsOpen(!isOpen)} className="rounded-full w-14 h-14 shadow-lg">
+          <Palette size={24} />
+        </Button>
+      </div>
     </div>
   );
 };
