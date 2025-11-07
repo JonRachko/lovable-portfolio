@@ -6,13 +6,13 @@ import { Palette } from "lucide-react";
 type ColorScheme = "blue" | "purple" | "purple-dark" | "purple-gradient" | "dark-blue" | "sunrise" | "mint";
 
 const schemes = [
-  { id: "dark-blue" as ColorScheme, name: "Dark Blue", color: "#020c45", description: "Deep Ocean Night" },
-  { id: "blue" as ColorScheme, name: "Ocean Blue", color: "#0BA5EC", description: "Professional & Tech-friendly" },
-  { id: "purple" as ColorScheme, name: "Lavender Light", color: "#F5F0FF", description: "Soft & Dreamy" },
-  { id: "purple-dark" as ColorScheme, name: "Purple Dark", color: "#1A0B2E", description: "Deep & Mysterious" },
-  { id: "purple-gradient" as ColorScheme, name: "Purple Gradient", color: "#3D0066", description: "Vibrant & Dynamic" },
-  { id: "sunrise" as ColorScheme, name: "Sunrise", color: "#FDB930", description: "Warm & Energetic" },
-  { id: "mint" as ColorScheme, name: "Mint Green", color: "#10B981", description: "Modern & Clean" },
+  { id: "dark-blue" as ColorScheme, name: "Dark Blue", color: "#020c45", description: "Dark Mode, But Lighter" },
+  { id: "blue" as ColorScheme, name: "Ocean Blue", color: "#0BA5EC", description: "Techy Vibes" },
+  { id: "purple" as ColorScheme, name: "Lavender Light", color: "#F5F0FF", description: "Soft and Dreamy" },
+  { id: "purple-dark" as ColorScheme, name: "Purple Dark", color: "#1A0B2E", description: "Deep and Mysterious" },
+  { id: "purple-gradient" as ColorScheme, name: "Very Purple", color: "#3D0066", description: "If You Like Purple" },
+  { id: "sunrise" as ColorScheme, name: "Sunrise Yellow", color: "#FDB930", description: "For the Optimists" },
+  { id: "mint" as ColorScheme, name: "Mint Green", color: "#10B981", description: "Made From 100% Recycled Pixels" },
 ];
 
 const ColorSchemeSwitcher = () => {
@@ -21,7 +21,7 @@ const ColorSchemeSwitcher = () => {
 
   useEffect(() => {
     const saved = localStorage.getItem("colorScheme") as ColorScheme;
-    if (saved && schemes.find(s => s.id === saved)) {
+    if (saved && schemes.find((s) => s.id === saved)) {
       setCurrentScheme(saved);
       applyScheme(saved);
     }
@@ -59,16 +59,11 @@ const ColorSchemeSwitcher = () => {
                 key={scheme.id}
                 onClick={() => handleSchemeChange(scheme.id)}
                 className={`w-full text-left p-3 rounded-lg border-2 transition-all hover:shadow-md ${
-                  currentScheme === scheme.id
-                    ? "border-primary bg-primary/5"
-                    : "border-border hover:border-primary/50"
+                  currentScheme === scheme.id ? "border-primary bg-primary/5" : "border-border hover:border-primary/50"
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <div
-                    className="w-8 h-8 rounded-full"
-                    style={{ backgroundColor: scheme.color }}
-                  />
+                  <div className="w-8 h-8 rounded-full" style={{ backgroundColor: scheme.color }} />
                   <div className="flex-1">
                     <div className="font-medium text-sm">{scheme.name}</div>
                     <div className="text-xs text-muted-foreground">{scheme.description}</div>
@@ -79,12 +74,8 @@ const ColorSchemeSwitcher = () => {
           </CardContent>
         </Card>
       )}
-      
-      <Button
-        size="lg"
-        onClick={() => setIsOpen(!isOpen)}
-        className="rounded-full w-14 h-14 shadow-lg"
-      >
+
+      <Button size="lg" onClick={() => setIsOpen(!isOpen)} className="rounded-full w-14 h-14 shadow-lg">
         <Palette size={24} />
       </Button>
     </div>
