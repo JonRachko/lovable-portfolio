@@ -87,7 +87,7 @@ const Contact = () => {
                   />
                 </div>
                 <Button type="submit" className="w-full">
-                  Dispatch!
+                  Dispatch Message!
                 </Button>
               </form>
             </CardContent>
