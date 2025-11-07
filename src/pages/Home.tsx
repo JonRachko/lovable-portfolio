@@ -19,7 +19,7 @@ const Home = () => {
               Game Developer & Technical Artist
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Specializing in Unity programming, technical art, and cross-team coordination,<br>I turn visions into
+              Specializing in Unity programming, technical art, and cross-team coordination,<br />I turn visions into
               experiences.
             </p>
             <div className="flex flex-wrap gap-4">
