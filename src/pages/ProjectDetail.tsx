@@ -112,7 +112,7 @@ const ProjectDetail = () => {
                 <Button asChild variant="outline">
                   <a href={project.links.youtube} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="mr-2" size={16} />
-                    Ad Exaple
+                    Ad Example
                   </a>
                 </Button>
               )}
