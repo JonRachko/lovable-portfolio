@@ -11,11 +11,11 @@ const skillCategories = [
     icon: Palette,
     title: "Technical Art",
     skills: [
-      "Shader Development",
+      "Animation Systems",
       "Particle Systems",
       "Material Creation",
-      "Animation Systems",
       "Procedural Generation",
+      "Shader Development",
     ],
   },
   {
@@ -43,7 +43,7 @@ const Skills = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">Skills & Tools</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive overview of my technical skills and the tools I use to bring games to life.
+            A comprehensive overview of my technical skills and the tools I use to make stuff
           </p>
         </div>
 
@@ -76,9 +76,11 @@ const Skills = () => {
         <Card className="max-w-4xl mx-auto mt-12 p-8">
           <h2 className="text-2xl font-heading font-bold mb-4 text-center">Always Learning</h2>
           <p className="text-muted-foreground text-center leading-relaxed">
-            The game development landscape is constantly evolving, and I'm committed to staying current with new
-            technologies, tools, and techniques. Currently exploring: [Add any technologies or skills you're currently
-            learning or want to highlight].
+            There's an infinite amount of things to learn, whether it's programming patterns, new tools and libraries,
+            or new game mechanics and even genres to explore. Currently I'm working on improving my modular
+            architecture, new methods for dependency injection and how to improve my unit testing game (and as always,
+            I'm diligently using my down-time to research both new and existing video games, for my professional
+            improvement of course).
           </p>
         </Card>
       </div>
