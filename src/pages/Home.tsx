@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const Home = () => {
   return (
@@ -63,11 +65,10 @@ const Home = () => {
           </div>
 
           <div className="flex-1 flex justify-center">
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center shadow-xl">
-              <div className="w-60 h-60 md:w-72 md:h-72 rounded-full bg-muted flex items-center justify-center text-muted-foreground">
-                <span className="text-6xl">👤</span>
-              </div>
-            </div>
+            <Avatar className="w-64 h-64 md:w-80 md:h-80 shadow-xl ring-4 ring-primary/20">
+              <AvatarImage src={profilePhoto} alt="Jon Rachko" className="object-cover" />
+              <AvatarFallback className="text-4xl">JR</AvatarFallback>
+            </Avatar>
           </div>
         </div>
       </section>
