@@ -81,7 +81,7 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="\"I wanted to let you know how much I love placeholder texts\", for example"
+                    placeholder='"I wanted to let you know how much I love placeholder texts", for example'
                     rows={6}
                     required
                   />
