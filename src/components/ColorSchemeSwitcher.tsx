@@ -3,21 +3,20 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Palette } from "lucide-react";
 
-type ColorScheme = "blue" | "purple" | "purple-dark" | "purple-gradient" | "dark-blue" | "sunrise" | "coral" | "mint";
+type ColorScheme = "blue" | "purple" | "purple-dark" | "purple-gradient" | "dark-blue" | "sunrise" | "mint";
 
 const schemes = [
-  { id: "blue" as ColorScheme, name: "Ocean Blue", color: "#0BA5EC", description: "Professional & Tech-friendly" },
   { id: "dark-blue" as ColorScheme, name: "Dark Blue", color: "#020c45", description: "Deep Ocean Night" },
+  { id: "blue" as ColorScheme, name: "Ocean Blue", color: "#0BA5EC", description: "Professional & Tech-friendly" },
   { id: "purple" as ColorScheme, name: "Lavender Light", color: "#F5F0FF", description: "Soft & Dreamy" },
   { id: "purple-dark" as ColorScheme, name: "Purple Dark", color: "#1A0B2E", description: "Deep & Mysterious" },
   { id: "purple-gradient" as ColorScheme, name: "Purple Gradient", color: "#3D0066", description: "Vibrant & Dynamic" },
   { id: "sunrise" as ColorScheme, name: "Sunrise", color: "#FDB930", description: "Warm & Energetic" },
-  { id: "coral" as ColorScheme, name: "Coral Orange", color: "#F97316", description: "Energetic & Approachable" },
   { id: "mint" as ColorScheme, name: "Mint Green", color: "#10B981", description: "Modern & Clean" },
 ];
 
 const ColorSchemeSwitcher = () => {
-  const [currentScheme, setCurrentScheme] = useState<ColorScheme>("blue");
+  const [currentScheme, setCurrentScheme] = useState<ColorScheme>("dark-blue");
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -30,7 +29,9 @@ const ColorSchemeSwitcher = () => {
 
   const applyScheme = (scheme: ColorScheme) => {
     const root = document.documentElement;
-    if (scheme === "blue") {
+    if (scheme === "dark-blue") {
+      root.setAttribute("data-theme", "dark-blue");
+    } else if (scheme === "blue") {
       root.removeAttribute("data-theme");
     } else {
       root.setAttribute("data-theme", scheme);
