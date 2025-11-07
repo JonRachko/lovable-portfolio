@@ -19,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      description: "Thank you for reaching out. Can't wait to read it!",
     });
     setFormData({ name: "", email: "", message: "" });
   };
@@ -35,11 +35,10 @@ const Contact = () => {
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-            Get In Touch
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">Get In Touch</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Interested in working together or have a question? Feel free to reach out!
+            Interested in working together, have a question, or just want to complement my headshot? Feel free to reach
+            out!
           </p>
         </div>
 
@@ -48,20 +47,18 @@ const Contact = () => {
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl">Send a Message</CardTitle>
-              <CardDescription>
-                Fill out the form below and I'll get back to you as soon as possible.
-              </CardDescription>
+              <CardDescription>Fill out this form and I'll get back to you ASAP.</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
+                  <Label htmlFor="name">Your name</Label>
                   <Input
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Your name"
+                    placeholder="John, Stella, Xerxes, etc."
                     required
                   />
                 </div>
@@ -73,7 +70,7 @@ const Contact = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="your.email@example.com"
+                    placeholder="your.email@address.com"
                     required
                   />
                 </div>
@@ -84,13 +81,13 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Tell me about your project or inquiry..."
+                    placeholder="I wanted to let you know hoe much I love placeholder texts"
                     rows={6}
                     required
                   />
                 </div>
                 <Button type="submit" className="w-full">
-                  Send Message
+                  Dispatch!
                 </Button>
               </form>
             </CardContent>
@@ -117,7 +114,7 @@ const Contact = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl">Find Me Online</CardTitle>
+                <CardTitle className="text-2xl">I'm also over here</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <a
@@ -150,8 +147,8 @@ const Contact = () => {
             <Card className="bg-gradient-to-br from-primary/5 to-accent/5">
               <CardContent className="p-6">
                 <p className="text-muted-foreground text-center leading-relaxed">
-                  I'm always interested in hearing about new projects and opportunities. 
-                  Whether you have a question or just want to say hi, I'll do my best to get back to you!
+                  I'm always interested in hearing about new projects and opportunities! Send a message and I'll get
+                  back to you as soon as I can!
                 </p>
               </CardContent>
             </Card>
