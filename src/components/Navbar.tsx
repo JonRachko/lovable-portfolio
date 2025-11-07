@@ -42,7 +42,7 @@ const Navbar = () => {
               </NavLink>
             ))}
             <Button asChild size="sm">
-              <a href={resumePath} download>
+              <a href={resumePath} download="Jon-Rachko-Resume.pdf">
                 Download Resume
               </a>
             </Button>
@@ -72,7 +72,7 @@ const Navbar = () => {
               </NavLink>
             ))}
             <Button asChild size="sm" className="w-fit">
-              <a href={resumePath} download>
+              <a href={resumePath} download="Jon-Rachko-Resume.pdf">
                 Resume
               </a>
             </Button>
