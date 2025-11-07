@@ -78,8 +78,8 @@ const Skills = () => {
           <p className="text-muted-foreground text-center leading-relaxed">
             There's an infinite amount of things to learn, whether it's programming patterns, new tools and libraries,
             or new game mechanics and even genres to explore. Currently I'm working on improving my modular
-            architecture, new methods for dependency injection and how to improve my unit testing game (and as always,
-            I'm diligently using my down-time to research both new and existing video games, for my professional
+            architecture, new methods for dependency injection, and on how to improve my unit testing game (and, as
+            always, I'm diligently using my down-time to research both new and existing video games, for my professional
             improvement of course).
           </p>
         </Card>
