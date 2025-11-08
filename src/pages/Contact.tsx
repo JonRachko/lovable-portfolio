@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { ItchIcon } from "@/components/icons/ItchIcon";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -136,7 +137,7 @@ const Contact = () => {
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-                    <ExternalLink className="text-primary" size={20} />
+                    <ItchIcon className="text-primary" size={20} />
                   </div>
                   <span>Itch.io</span>
                   <ExternalLink className="ml-auto" size={16} />
