@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { ItchIcon } from "@/components/icons/ItchIcon";
 import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const Home = () => {
@@ -53,7 +54,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <ExternalLink size={24} />
+                <ItchIcon size={24} />
               </a>
               <a
                 href="mailto:jonrachko@gmail.com"
