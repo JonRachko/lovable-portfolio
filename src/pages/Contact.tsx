@@ -1,37 +1,8 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Linkedin, Mail, ExternalLink } from "lucide-react";
 import { ItchIcon } from "@/components/icons/ItchIcon";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. Can't wait to read it!",
-    });
-    setFormData({ name: "", email: "", message: "" });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   return (
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4 max-w-6xl">
@@ -43,59 +14,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Contact Form */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-2xl">Send a Message</CardTitle>
-              <CardDescription>Fill out this form and I'll get back to you ASAP.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Your name</Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="John, Stella, Xerxes, etc."
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="your.email@address.com"
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder='"I wanted to let you know how much I love placeholder texts", for example'
-                    rows={6}
-                    required
-                  />
-                </div>
-                <Button type="submit" className="w-full">
-                  Dispatch Message!
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-
-          {/* Contact Info & Links */}
-          <div className="space-y-6">
+        <div className="max-w-2xl mx-auto space-y-6">
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Contact Information</CardTitle>
@@ -153,7 +72,6 @@ const Contact = () => {
                 </p>
               </CardContent>
             </Card>
-          </div>
         </div>
       </div>
     </div>
