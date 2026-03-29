@@ -265,7 +265,7 @@ export const projectsData: ProjectData[] = [
     tags: ["Unity", "C#", "Interactive Installation", "Runtime Data Handling", "Museum", "Touch Interface"],
     image: "/projects/tema-creative/dtc.png",
     links: {
-      live: "https://www.temacreative.com/temacreative-theisraelmuseum",
+      live: "https://www.temacreative.com/",
     },
     content: {
       overview: [
